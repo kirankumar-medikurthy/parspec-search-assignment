@@ -1,0 +1,56 @@
+.user-list-main-container {
+
+    .user-list-sub-container {
+        text-align: left;
+        padding: 5px 20px;
+        background: white;
+        border-bottom: 0.5px solid #f0f0f0;
+
+        &:first-child {
+            margin-top: 40px !important;
+        }
+
+        &:hover {
+            background: yellow;
+            cursor: pointer;
+        }
+
+        &>div {
+            font-family: 'Avenir Next';
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .user-id {
+            font-weight: 700;
+        }
+
+        .user-name {
+            font-style: italic;
+        }
+
+        .user-address {
+            padding: 10px 0px;
+            opacity: 0.5;
+        }
+
+        .result-found-query {
+            font-size: 15px;
+            font-weight: 400;
+            border-bottom: 1.5px solid #f0f0f0;
+            border-top: 1.5px solid #f0f0f0;
+            padding: 10px 0px;
+            display: flex;
+            align-items: center;
+
+            .dot {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: blue;
+                opacity: 0.6;
+                margin: 0px 10px;
+            }
+        }
+    }
+}
