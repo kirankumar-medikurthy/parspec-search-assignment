@@ -1,15 +1,10 @@
 .user-list-main-container {
-
     .user-list-sub-container {
         text-align: left;
         padding: 5px 20px;
         background: white;
         border-bottom: 0.5px solid #f0f0f0;
-
-        &:first-child {
-            margin-top: 40px !important;
-        }
-
+        margin: 2px 0px;
         &:hover {
             background: yellow;
             cursor: pointer;

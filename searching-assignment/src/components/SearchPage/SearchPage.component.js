@@ -100,24 +100,26 @@ const SearchPage = () => {
           </div>
         )}
       </div>
-      {isLoading ? (
-        <Shimers
-          wrapperBlock={"CategoiresAccordianWrapper"}
-          elementBlock={"CategoiresAccordianCard"}
-          count={5}
-        />
-      ) : filteredUserList.length > 0 ? (
-        filteredUserList.map((user, index) => (
-          <UserList
-            key={user?.id}
-            user={user}
-            search={search}
-            isFocused={index === focusedIndex}
+      <div className="userList-main-container">
+        {isLoading ? (
+          <Shimers
+            wrapperBlock={"CategoiresAccordianWrapper"}
+            elementBlock={"CategoiresAccordianCard"}
+            count={5}
           />
-        ))
-      ) : (
-        renderNoResultFound()
-      )}
+        ) : filteredUserList.length > 0 ? (
+          filteredUserList.map((user, index) => (
+            <UserList
+              key={user?.id}
+              user={user}
+              search={search}
+              isFocused={index === focusedIndex}
+            />
+          ))
+        ) : (
+          renderNoResultFound()
+        )}
+      </div>
     </div>
   );
 };
