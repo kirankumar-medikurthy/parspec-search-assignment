@@ -37,6 +37,9 @@
                 height: 35px;
                 border: none;
                 padding: 0px 0px 0px 10px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
 
                 &:focus {
                     outline: none;
@@ -60,6 +63,7 @@
         margin: 50% auto;
         text-align: center;
     }
+
     .userList-main-container {
         margin-top: 40px;
     }
